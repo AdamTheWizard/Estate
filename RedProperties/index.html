@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    
+      <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Red Properties - Estate Agents</title>
+      
+      <script src="https://use.fontawesome.com/afac56adce.js"></script>
+      
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      
+      
+      
+      <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="vendors/jquery.easings.min.js"></script>
+
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+      
+      <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage();
+    });
+</script>
+
+    <!-- Custom styles for this template -->
+    <style>
+        
+        
+        * {
+            margin:0;
+            padding:0;
+        }
+        
+        body{
+            overflow-x: hidden;
+            padding-top:76px;
+        }
+        
+        .navbar {
+            background-color:rgba(255,255,255,0.5) !important;
+            text-transform: uppercase;
+        }
+        
+        #nav-logo {
+            width:50px;
+        }
+        
+        #contact-bar {
+            background-color:rgba(200,0,0,0.5);
+            color:white;
+        }
+        #contact-bar p {
+            margin-top:15px;
+            font-weight:100;
+            
+        }
+        
+        .banner {
+  position: relative; 
+            overflow:visible;
+}
+        
+        
+
+.banner__video {
+    
+  position: absolute;
+     margin-top:-7em;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+        #main-logo {
+            margin-top:2em;
+            opacity:0;
+        }
+        
+        #landing-text {
+            color:#fff;
+            font-size:150%;
+            text-shadow:1px 1px 9px #444;
+        }
+        
+        .main-btn {
+            color:white;
+            text-shadow:1px 1px 1px black;
+            background-color:rgba(255,255,255,0.2);
+            border:1px solid #A72524;
+            padding:10px;
+            font-size:150%;
+            border-radius:10px;
+            margin-top:1em;
+        }
+        
+        .main-btn:hover
+{
+    cursor:pointer;
+    text-shadow:1px 1px 9px white;
+    color:#444;
+        box-shadow: inset 10px 0px 10px 0px #A72524;
+    background-color:rgba(255,255,255,0.9);
+}
+        
+        #downArrowRow {
+                position:relative;
+            color:rgb(255,50,50);
+            text-shadow:1px 1px 1px #A72524;
+            z-index: 999;
+            color:red;
+            }
+        
+            #downArrowDiv {
+                opacity:0;
+                position: absolute;
+                bottom:0;
+                z-index: 999;
+                
+            }
+        
+        #carousel-container {
+            margin-top:12em;
+            height:100vh;
+        }
+        
+        .carousel-inner {
+            height: 100vh;
+        }
+        
+        .carousel-caption {
+            margin-bottom:30em;
+            background-color:rgba(167, 37, 36, 0.7);
+            border-radius:10px;
+        }
+        
+        .carousel-titles {
+            font-size:500%;
+            text-shadow:2px 2px 9px #444;
+        }
+        
+        .carousel-text {
+            text-shadow:1px 1px 1px #000;
+        }
+        
+        .prev-icon {
+            font-weight:800;
+            font-size:200%;
+            color:#AF2829;
+            font-stretch:ultra-expanded;
+        }
+        
+        	.title-arch {
+		text-align: center;
+		margin: 50px 0;
+		font-size: 22px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+.project {
+	width: 100%;
+	height: 500px;
+	background-image: url(https://static.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg);
+	background-size: cover;
+	background-position: center;
+	padding: 0 !important;
+	float:left;
+}
+
+.project-2 {
+	background-image: url(https://static.pexels.com/photos/311626/pexels-photo-311626.jpeg);
+}
+
+.project-3 {
+	background-image: url(https://static.pexels.com/photos/47261/pexels-photo-47261.jpeg);
+}
+
+.project-4 {
+	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
+}
+
+.project-hover {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background-color: rgba(175, 40, 41, .7);
+	padding: 40% 30px !important;
+}
+
+.project-hover hr {
+	height: 30px;
+	width: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background-color: rgba(255, 255, 255, 1);
+	border: 0;
+}
+
+.project-hover a {
+	color: rgba(255, 255, 255, 1);
+	padding: 2px 22px;
+	line-height: 40px;
+	border: 2px solid rgba(255, 255, 255, 1);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.project-hover a:hover {
+	border-color: rgba(51, 51, 51, 1);
+	color: rgba(51, 51, 51, 1);
+	background-color: #FFF;
+}
+
+.project:hover .project-hover {
+	opacity: 1;
+}
+
+.project:hover .project-hover hr {
+	width: 100%;
+	height: 5px;
+}
+        
+  
+        #search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
+}
+
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
+}
+
+    .search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 30px;
+        line-height: 18px;
+        padding: 0 2px 0 2px;
+        border-radius:15px;
+    }
+
+        .search:hover input, .search input:focus {
+            width: 200px;
+            margin-left: 0px;
+        }
+
+        .search-btn {
+            height: 30px;
+            position: absolute;
+            right: 0;
+            top: 5px;
+            border-radius:15px;
+        }
+
+
+        
+
+        
+    
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img id="nav-logo" src="transLogo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sales
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Lettings
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              What we do
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Social
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Contact us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+    </ul>
+    <form action="" class="search-form">
+                <div class="search">
+<input type="text" class="form-control input-sm" maxlength="64" placeholder="Search..." />
+ <button type="submit" class="btn btn-secondary btn-sm search-btn">Search <i class="fa fa-search" aria-hidden="true"> </i>
+</button>
+</div>
+            </form>
+  </div>
+</nav>
+          
+      <div class="row" id="contact-bar">
+          <div class="container"> 
+              <p id="contact-info">Call us 020 8653 5000 or drop us an email 	
+                  info@redproperties.co.uk</p>          
+          </div>
+      </div>
+    
+    <!-- Page Content -->
+      <div class="banner">
+          <video autoplay loop muted class="banner__video section active" poster="video.jpg">
+    <source src="Mp4/Shoes-Stories.mp4" type="video/mp4">
+  </video>
+          <div class="row img-container">
+          
+              <img src="logowhite.png" id="main-logo" class="col-sm-4 offset-sm-4">
+          </div>
+          <div class="container">
+          <div class="row">
+            <p id="landing-text" class="col-12 text-center">Simply the best estate agents in South Norwood & the surrounding area of South London.</p>
+          </div>
+          </div>
+          <div class="container">
+          
+              <div class="row" id="btn-row">
+                <button class="btn col-sm-3 offset-sm-1 main-btn">I want to buy!</button>
+                <button class="btn col-sm-3 offset-sm-4 main-btn">I want to rent!</button>
+              </div>
+          <div id="downArrowRow" class="row">
+                <div id="downArrowDiv" class="col-12 text-center">
+                    <p class="small">Hey! Down Here!</p>
+                    <img src="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-08-128.png" id="downArrow">
+                </div>
+            </div>
+          </div>
+  
+</div>
+      
+      <div id="carousel-container" class="section">
+      
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://static.pexels.com/photos/349749/kitchen-stove-sink-kitchen-counter-349749.jpeg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+    <h3 class="carousel-titles">Free Property Valuations!</h3>
+    <p class="carousel-text lead">How much is your property worth?  Call us to arrange a valuation or just click the button above for an instant valuation.</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://static.pexels.com/photos/311626/pexels-photo-311626.jpeg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+    <h3 class="carousel-titles">increase Visibility!</h3>
+    <p class="carousel-text lead">When you rent or sell with Red Properties your home is listed on Rightmove, Zoopla, Primelocation and is therefore visible to 1000's of people searching for a home like yours.</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://static.pexels.com/photos/6438/apple-iphone-technology-white.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+    <h3 class="carousel-titles">Embrace The Future!</h3>
+    <p class="carousel-text lead">Why not download the Red Properties app and make sure you're the first to know when the home of your dreams comes onto the market.</p>
+  </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="prev-icon" aria-hidden="true">&#60;</span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="prev-icon" aria-hidden="true">&#62;</span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+          
+      </div>
+      
+      
+      <div id="white">
+      
+          
+<div class="">
+<div class="title-arch">Our Vision<p>To be simply the best estate agents in South Norwood & the surrounding area of South London.</p></div>
+    
+    
+
+	<div class="col-xl-4 col-lg-3 col-md-3 col-sm-3 project wow animated animated4 fadeInLeft">
+        <div class="project-hover">
+        	<h2>Get a valuation</h2>
+            
+            <hr />
+            <p>How much is your property worth? Call us to arrange a valuation or just click the button above for an instant valuation.</p>
+            <a href="#">Lets go!</a>
+        </div>
+    </div>
+	<div class="col-xl-4 col-lg-3 col-md-3 col-sm-3 project project-2 wow animated animated3 fadeInLeft">
+    	<div class="project-hover">
+        	<h2>Increase visibility</h2>
+            <hr />
+            <p>When you rent or sell with Red Properties your home is listed on Rightmove, Zoopla, Primelocation and is therefore visible to 1000's of people searching for a home like yours.</p>
+            <a href="#">Get Started!</a>
+        </div>
+    </div>
+	<div class="col-xl-4 col-lg-3 col-md-3 col-sm-3 project project-3 wow animated animated2 fadeInLeft">
+    	<div class="project-hover">
+        	<h2>Embrace The Future!</h2>
+            <hr />
+            <p>Why not download the Red Properties app and make sure you're the first to know when the home of your dreams comes onto the market.</p>
+            <a href="#">Get The App!</a>
+        </div>
+    </div>
+	
+    <div class="clearfix"></div>
+    
+</div>
+      
+      </div>
+      
+      <hr>
+      
+     
+      
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+      <script>
+          
+          function animateArrow() {
+                
+                var x = $(window).height()
+                                
+                if (x <= 600){
+                    
+                    $("#downArrowDiv").animate({top:"5em", opacity:"1"}, 2000, function() {
+                            
+                        $(this).animate({top:"0em", opacity:"0.8"}, 2000);
+                    });
+                    
+                } else if (x >= 600 && x <= 900) {
+                    
+                        $("#downArrowDiv").animate({top:"9em", opacity:"1"}, 2000, function() {
+                            
+                            $(this).animate({top:"0em", opacity:"0.8"}, 2000);
+                            
+                        });
+                    
+                } else if (x >= 900) {
+                    
+                    $("#downArrowDiv").animate({top:"13em", opacity:"1"}, 2000, function() {
+                            
+                        $(this).animate({top:"0em", opacity:"0.8"}, 2000);
+                        
+                    });
+                }
+            };
+            
+            setInterval(animateArrow, 2000);
+          
+          $(window).scroll(function(){
+              
+              $("#downArrowRow").css("display", "none");
+              
+          });
+          
+          $(window).ready(function(){
+              
+              $("#main-logo").animate({opacity: "1"}, 5000);
+              
+          })
+          
+          
+          
+          
+
+      
+      </script>
+
+  </body>
+
+</html>
